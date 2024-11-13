@@ -1,0 +1,323 @@
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Discord Chat Export</title>
+        <style>
+          body {
+            font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #36393f;
+            color: #dcddde;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+          }
+          .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid;
+            height: 100%;
+            overflow: auto;
+            flex: 1;
+            border-radius: 6px;
+          }
+          .chatTitle {
+            background-color: #2f3136;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+          }
+          .chatTitle img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin-right: 20px;
+          }
+          .titleInfo p {
+            margin: 5px 0;
+          }
+          .titleInfo p:first-child {
+            font-size: 24px;
+            font-weight: bold;
+          }
+          .chatContent {
+            background-color: #36393f;
+            border-radius: 8px;
+            padding: 0;
+            margin: 0;
+          }
+          .chatContent li {
+            list-style: none;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+          }
+          .chatContent li:hover {
+            background-color: #32353b;
+          }
+          .chatContent .titleImg {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 16px;
+          }
+          .messageContent {
+            flex-grow: 1;
+          }
+          .chatName {
+            color: #fff;
+            font-weight: 500;
+            margin-right: 8px;
+          }
+          .time {
+            color: #72767d;
+            font-size: 0.75rem;
+          }
+          .chatContent p {
+            margin: 8px 0;
+          }
+          .attachment {
+            margin-top: 12px;
+            max-width: 100%;
+          }
+          .image-attachment img {
+            max-width: 400px;
+            max-height: 300px;
+            border-radius: 4px;
+          }
+          .video-attachment video,
+          .audio-attachment audio {
+            max-width: 400px;
+          }
+          .file-attachment a {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #2f3136;
+            border-radius: 4px;
+            color: #00b0f4;
+            text-decoration: none;
+            font-size: 0.9em;
+          }
+          .file-attachment a:hover {
+            background-color: #393c43;
+          }
+          .sameSender {
+            margin-top: -16px;
+          }
+          .sameSender .titleImg, .sameSender .chatName, .sameSender .time {
+            display: none;
+          }
+        </style>
+      </head>
+      <body>
+        <p style="text-align: center; font-size: 15px;">Export 19 message(s)</p>
+        <div class="container">
+          <div class="chatTitle">
+            <img src="https://static-global.zingfront.com/extension/avator.png" alt="">
+            <div class="titleInfo">
+              <p>...</p>
+              <p>...</p>
+              <p style="font-size: 15px;">从 Sat Nov 02 2024 00:00:00 GMT+0100 (heure normale d’Europe centrale) 到 Sun Nov 10 2024 00:00:00 GMT+0100 (heure normale d’Europe centrale)</p>
+            </div>
+          </div>
+          <ul class="chatContent">
+            
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/959893783393235034/4c2ef2f330a95a2b0ac3a17a95121851.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">_athes_</span><span class="time">Sat Nov 02 2024 14:48:28 GMT+0100 (heure normale d’Europe centrale)</span></p>
+          <p><span style="color: skyblue;"></span> https://www.youtube.com/watch?v=gWk1p8-Zohk&start=840</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/959893783393235034/4c2ef2f330a95a2b0ac3a17a95121851.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">_athes_</span><span class="time">Sat Nov 02 2024 14:49:31 GMT+0100 (heure normale d’Europe centrale)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1302268091618689134/1302268359051710606/PANDA.png?ex=6735572b&is=673405ab&hm=2d4f116eddf4285e98b406266168c562a8d477a0f1148705068ceb9b7c172818&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/959893783393235034/4c2ef2f330a95a2b0ac3a17a95121851.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">_athes_</span><span class="time">Sat Nov 02 2024 14:50:06 GMT+0100 (heure normale d’Europe centrale)</span></p>
+          <p><span style="color: skyblue;">@rosazera#0@akane2451#0@louvian#0</span> <@219079227948007424> <@519652670223417353> <@196957389054935040> 
+
+J'ai créé un fil pour ne pas que Ira soit spoil sur le pandamonium du coup</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/196957389054935040/b3773de612f5127b9804e8bdd0fdd753.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">rosazera</span><span class="time">Sat Nov 02 2024 15:13:52 GMT+0100 (heure normale d’Europe centrale)</span></p>
+          <p><span style="color: skyblue;"></span> invite la chevre et donkey 😉</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/959893783393235034/4c2ef2f330a95a2b0ac3a17a95121851.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">_athes_</span><span class="time">Sat Nov 02 2024 15:16:01 GMT+0100 (heure normale d’Europe centrale)</span></p>
+          <p><span style="color: skyblue;"></span> Ils ont terminé l'épopée ? Car pour leur donner l'accès, je dois leur donner l'accès au canal épopée, si ça les dérange pas, c'est n'ok</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/196957389054935040/b3773de612f5127b9804e8bdd0fdd753.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">rosazera</span><span class="time">Sat Nov 02 2024 15:16:16 GMT+0100 (heure normale d’Europe centrale)</span></p>
+          <p><span style="color: skyblue;"></span> oiu oiu ils ont fini ❤️</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/959893783393235034/4c2ef2f330a95a2b0ac3a17a95121851.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">_athes_</span><span class="time">Sat Nov 02 2024 15:16:26 GMT+0100 (heure normale d’Europe centrale)</span></p>
+          <p><span style="color: skyblue;"></span> N'oki 💙</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/959893783393235034/4c2ef2f330a95a2b0ac3a17a95121851.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">_athes_</span><span class="time">Sat Nov 02 2024 15:17:10 GMT+0100 (heure normale d’Europe centrale)</span></p>
+          <p><span style="color: skyblue;">@une_chevre#0@donkeybe#0</span> <@313403230577229834> <@160470733003161600> 
+
+Normalement, vous êtes là !</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/313403230577229834/65a94c15068cfc8c9575c92bf7b18e4d.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">donkeybe</span><span class="time">Sat Nov 02 2024 15:28:13 GMT+0100 (heure normale d’Europe centrale)</span></p>
+          <p><span style="color: skyblue;"></span> Mercéé</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/313403230577229834/65a94c15068cfc8c9575c92bf7b18e4d.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">donkeybe</span><span class="time">Sat Nov 02 2024 20:34:43 GMT+0100 (heure normale d’Europe centrale)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1302268091618689134/1302355228695334972/714.png?ex=6735a813&is=67345693&hm=d541ea52d42cdce3bd70008f8c95bef68de939b6af18f4383d1de26837329b11&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/196957389054935040/b3773de612f5127b9804e8bdd0fdd753.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">rosazera</span><span class="time">Sat Nov 02 2024 20:35:11 GMT+0100 (heure normale d’Europe centrale)</span></p>
+          <p><span style="color: skyblue;"></span> https://raidplan.io/plan/t11hqEMvtcCbgv2p diapo 1-7</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/959893783393235034/4c2ef2f330a95a2b0ac3a17a95121851.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">_athes_</span><span class="time">Sat Nov 02 2024 20:35:27 GMT+0100 (heure normale d’Europe centrale)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1302268091618689134/1302355414045687869/0102.png?ex=6735a83f&is=673456bf&hm=9b229f3636b566947ad2d1f3f740b6b684415ec16a5db0db0e80034efee1fb30&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/959893783393235034/4c2ef2f330a95a2b0ac3a17a95121851.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">_athes_</span><span class="time">Sat Nov 02 2024 20:35:48 GMT+0100 (heure normale d’Europe centrale)</span></p>
+          <p><span style="color: skyblue;"></span> Je suis celui qu'à la moins d'Ilvl, je peux pas MT</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/196957389054935040/b3773de612f5127b9804e8bdd0fdd753.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">rosazera</span><span class="time">Sat Nov 02 2024 20:36:02 GMT+0100 (heure normale d’Europe centrale)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1302268091618689134/1302355561115025488/M5RA3Lq.png?ex=6735a862&is=673456e2&hm=cafbcd00040ee3141b01bbadb34337ebd5f2e5228061f49d7688174ad189ce35&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/196957389054935040/b3773de612f5127b9804e8bdd0fdd753.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">rosazera</span><span class="time">Sun Nov 03 2024 00:01:40 GMT+0100 (heure normale d’Europe centrale)</span></p>
+          <p><span style="color: skyblue;"></span> https://www.youtube.com/watch?v=NUSmXzCi6SU&ab_channel=joonbob</p>
+          
+        </div>
+      </li>
+    
+      <li class="sameSender">
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/196957389054935040/b3773de612f5127b9804e8bdd0fdd753.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">rosazera</span><span class="time">Sun Nov 03 2024 00:02:47 GMT+0100 (heure normale d’Europe centrale)</span></p>
+          <p><span style="color: skyblue;"></span> </p>
+          <div class="attachment image-attachment">
+                <img src="https://cdn.discordapp.com/attachments/1302268091618689134/1302407592831746068/image.png?ex=6735d8d7&is=67348757&hm=47d5dada24c4d4d7a1c4e837c5303d732a0f50e8ff198f7b7214b3a1158941da&" alt="图片附件">
+              </div>
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/959893783393235034/4c2ef2f330a95a2b0ac3a17a95121851.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">_athes_</span><span class="time">Sun Nov 03 2024 00:03:39 GMT+0100 (heure normale d’Europe centrale)</span></p>
+          <p><span style="color: skyblue;">@rosazera#0</span> https://tenor.com/view/kermit-wat-what-wtf-are-you-kidding-gif-13598412</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/196957389054935040/b3773de612f5127b9804e8bdd0fdd753.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">rosazera</span><span class="time">Fri Nov 08 2024 23:21:13 GMT+0100 (heure normale d’Europe centrale)</span></p>
+          <p><span style="color: skyblue;"></span> J'ai 2 last pour dimanche :3</p>
+          
+        </div>
+      </li>
+    
+      <li >
+        <img class="titleImg" width="40px" height="40px" src="https://cdn.discordapp.com/avatars/141146503447183360/62321f56c4035299a31b17e39856cba4.png?size=128" alt="">
+        <div class="titleInfo">
+          <p class="timeInfo"><span class="chatName">ripoxy</span><span class="time">Sat Nov 09 2024 00:39:36 GMT+0100 (heure normale d’Europe centrale)</span></p>
+          <p><span style="color: skyblue;"></span> C'est bon j'ai terminé Pandemonium, je serais là pour la prochaine session du coup 😄</p>
+          
+        </div>
+      </li>
+    
+          </ul>
+        </div>
+
+      </body>
+      </html>
+    
